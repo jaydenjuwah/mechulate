@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechulate | Home</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        h1 {
+            color: #007acc;
+        }
+        .quote {
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007acc;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .button:hover {
+            background-color: #005f99;
+        }
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            body {
+                margin: 20px;
+            }
+            .button {
+                padding: 8px 15px;
+                font-size: 14px;
+            }
+        }
+
+        .portfolio-button {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #007acc;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 122, 204, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.portfolio-button:hover {
+    background-color: #005fa3;
+    transform: translateY(-2px);
+}
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to Mechulate</h1>
+    <p class="quote">"The best way to understand engineering is to play with it."</p>
+
+    <div class="section">
+        <h2>🔧 What is Mechulate?</h2>
+        <p>Mechulate is a mini engineering lab (a mechulator)—made for students, by a student. Here, you’ll find tools to explore core engineering ideas.</p>
+        <p>Whether it’s calculating how much a beam bends or understanding gear ratios, Mechulate gives you tools to learn by doing.</p>
+    </div>
+
+    <div class="section">
+        <h2>🚀 Why I Built This</h2>
+        <p>I'm a 15-year-old student in Nigeria, passionate about mechanical engineering and programming. I started Mechulate to help students like me see the fun side of engineering.</p>
+        <p>This is more than a website. It’s my passion project—the kind of thing I wish existed when I first started learning.</p>
+        <a href="/portfolio" class="portfolio-button">View My Portfolio</a>
+
+    </div>
+
+    <div class="section">
+        <h2>🔵 Explore Calculators</h2>
+        <p>Ready to explore? Start with one of my live engineering calculators below:</p>
+        <a href="/gear" class="button">Gear Ratio Calculator</a>
+        <a href="/beam" class="button">Beam Deflection Calculator</a>
+        <a href="/stress" class="button">Stress Calculator</a> 
+        <a href="/strain" class="button">Strain Calculator</a>
+    </div>
+
+    <div class="section">
+        <h2>📘 Learn the Concepts</h2>
+
+        <h3>Beam Deflection</h3>
+        <p>
+            Beam deflection refers to how much a structural element (like a beam) bends under a load. 
+            It's a fundamental concept in structural and mechanical engineering because it tells us whether 
+            a structure can safely support weight without bending too much or breaking.
+        </p>
+
+        <p><strong>Why it matters:</strong> Beam deflection matters because it ensures safety by preventing structural 
+            failure and optimizes material use for cost-effective, reliable designs.</p>
+        <p>
+            Engineers calculate deflection when designing buildings, bridges, aircraft wings, car frames, and 
+            more. Knowing how much a beam will bend helps prevent failures, improve safety, and optimize material use.
+        </p>
+        <h3>Gear Ratio</h3>
+        <p>
+            Gear ratios compare the number of teeth on two gears and determine how speed and torque are transferred. 
+            They are crucial in machines, vehicles, robotics, and any system that involves rotational motion.
+        </p>
+        <p>
+            A high gear ratio increases torque (good for climbing hills), while a low gear ratio increases speed 
+            (great for racing). Understanding gear ratios helps engineers design efficient transmissions, robots, 
+            and mechanical systems that work just right for the job.
+        </p>
+
+        <p><strong>Why it matters:</strong> Gear ratios control how torque and speed are transferred in machines. From cars to bicycles to industrial
+            robots, understanding gear ratios is essential for designing systems that move efficiently and reliably.
+        </p>
+    
+        <h3>Stress</h3>
+        <p>
+            Stress is the force applied to a material divided by the area it's applied to. Think of pressing 
+            your finger on a table — the harder you press and the smaller your finger, the more stress the table feels.
+        </p>
+
+        <p><strong>Why it matters:</strong> Stress measures the internal force within materials under load. Engineers use it to predict whether
+            a structure will hold or fail — making it vital for designing safe bridges, engines, buildings, and more.
+        </p>
+
+        <h3>Strain</h3>
+        <p>
+            Strain is how much a material stretches or compresses when stress is applied. It's a measure of 
+            deformation — how much a material changes shape under force.
+        </p>
+
+        <p><strong>Why it matters:</strong> Strain shows how much a material deforms under stress. It helps engineers understand flexibility, 
+            stretch, and potential failure — especially in materials like metal, plastic, or even bones in biomechanics.
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stress Calculator</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 40px; background-color: #f5f5f5; color: #333; }
+        h1 { color: #007acc; }
+        input, button { padding: 10px; margin: 5px 0; }
+        .calculator-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.form-section {
+    width: 45%;
+}
+
+.result-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.result {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="form-section">
+            <h1>Stress Calculator</h1>
+            <form method="POST">
+                <label>Force (N):</label><br>
+                <input type="number" name="force" step="any" required><br>
+                <label>Area (m²):</label><br>
+                <input type="number" name="area" step="any" required><br>
+                <button type="submit">Calculate</button>
+            </form>
+            <br>
+            <a href="/" class="button">← Back Home</a>
+        </div>
+        
+        {% if result %}
+        <div class="result-section">
+            <div class="result">Stress = {{ result }} Nm²</div>
+        </div>
+        {% elif error %}
+        <div class="result" style="color:red;">Error: {{ error }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>
